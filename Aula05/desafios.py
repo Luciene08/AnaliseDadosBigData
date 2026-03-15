@@ -35,18 +35,20 @@
 
 #### desafio 2##################
 
-largura= float(input("largura em metros: "))
-comprimento= float(input("comprimenro em metros: "))
-altura= float(input("altura em metros: "))
-print()#coloquei esse print pra pular uma linha no terminal
-dimensao_cozinha = largura * comprimento * altura
-print("Dimensão da cozinha:",dimensao_cozinha)
+# largura= float(input("largura em metros: "))
+# comprimento= float(input("comprimenro em metros: "))
+# altura= float(input("altura em metros: "))
+# print()#coloquei esse print pra pular uma linha no terminal
+# dimensao_cozinha = largura * comprimento * altura
+# print("Dimensão da cozinha:",dimensao_cozinha)
+# dimensao_parede=largura*altura
+# print("dimensao da parede:",dimensao_parede)
 
-caixa_azulejo=1.5
-quantidade_caixas= dimensao_cozinha / caixa_azulejo
-print("Quantidade de caixas:",quantidade_caixas)
+# caixa_azulejo=1.5
+# quantidade_caixas= dimensao_parede / caixa_azulejo
+# print("Quantidade de caixas:",quantidade_caixas)
 
-######desafio 3#################################
+# ######desafio 3#################################
 
 #Odometro
 # odometro_inicial=float(input("odometro inicial: "))
@@ -54,14 +56,14 @@ print("Quantidade de caixas:",quantidade_caixas)
 # odometro_final=odometro_inicial+km_dia
 # print("odometro", odometro_final)
 
-# combustível
+# #combustível
 
 # combustivel_inicial= float(input("combustivel inicial em litros: "))
 # combustivel_final= float(input("combustivel fim do dia em litros: "))
 # gasto_combustivel=combustivel_inicial-combustivel_final
 # print("gasto total de combustivel: ",gasto_combustivel)
-# valor_combustive=6.15
-# valor_gasto= gasto_combustivel*valor_combustive
+# valor_combustivel=6.15
+# valor_gasto= gasto_combustivel*valor_combustivel
 # print("valor gasto com combustivel: ",valor_gasto)
 # print()##espassamento
 # media_de_consumo=km_dia/gasto_combustivel
@@ -75,11 +77,12 @@ print("Quantidade de caixas:",quantidade_caixas)
 
 #### desafio 6####
 
-# numero = int(input("um numero:"))
-# if numero >=0:
-#  print("positivo")
-# elif numero <= 2:
-#  print("negativo")
+numero = int(input("um numero:"))
+if numero >=0:
+ print("positivo")
+else:
+ print("negativo")
+
 
 
 

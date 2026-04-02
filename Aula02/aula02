@@ -1,0 +1,45 @@
+
+import pandas as pd
+# Manipulando Séries
+# Vamos criar uma Series mais interessante, com notas de uma turma, usando índices
+# personalizados:
+notas = pd.Series([9.5, 8.0, 7.5, 9.0], index=['João', 'Maria', 'Pedro', 'Ana'])
+print(notas)
+#Daqui, podemos realizar consultas mais específicas:
+# print(notas['Maria']) # Acessando a nota de Maria
+# print(notas['Pedro']) # Acessando a nota de Pedro
+# print(notas.mode())
+# print(notas.median())
+# print(notas[notas > 8])
+# print(notas.describe())
+# print(notas.mean()) # Calculando a média das notas
+# print(notas[notas > 8]) # Filtrando notas maiores que 8
+# print(notas.describe()) # Estatísticas descritivas das notas
+"""
+count()
+mean()               50%, Q2 e mediana é a mesma coisa
+max()                
+min()
+var()
+std()
+sum()
+mode()
+mean()
+describe()
+groupby
+percentile
+quantile
+loc
+oloc
+query
+
+"""
+#  Aumentar todas as notas em 10%
+notas_ajustadas = notas * 1.10
+print(notas_ajustadas)
+
+# Criar uma segunda Series para comparar
+notas_exame_final = pd.Series([10.0, 7.5, 8.0, 9.5], index=['João', 'Maria', 'Pedro', 'Ana'])
+# Calcular a diferença entre as notas
+diferenca = abs(notas_exame_final - notas_ajustadas) # abs ignora se o numero o resultado é negativo.
+print(diferenca)
